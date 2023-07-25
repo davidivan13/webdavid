@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>web david</title>
+  <link rel="stylesheet" type="text/css" href="web.css">
+</head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+  <p class="pti">PTI E</p>
+  <p class="welcome">---WELCOME---</p>
+  <a href="TAS.html" class="linkatas">HOME</a>
+  <a href="TAS.html" class="linkatas">DOCUMENT</a>
+  <a href="TAS.html" class="linkatas">BLOG</a>
+  <a href="TAS.html" class="linkatas">TUTORIAL</a>
+  <a href="TAS.html" class="linkatas">HTML</a>
+  <a href="TAS.html" class="linkatas">CONTACT US</a>
+  <a href="TAS.html" class="linkatas">LOG IN</a>
+  <table border="1">
+    <tr>
+      <td>
+        <center>============Biodata============</center>
+        <hr color="Black">
+        <center><img src="a1.jpg" width="277" alt="gambar" title="gambar"></center>
+        <hr color="Black">
+        <p>
+          <center>-------------------------------------------</center>
+          <p class="tulisan">Nama lengkap: David Ivan Suprihanto</p>
+          <p class="tulisan">Nama: David</p>
+          <p class="tulisan">Nim: 672020172</p>
+          <p class="tulisan">Alamat asal: JL. Dliko Indah IX NO.118</p>
+          <p class="tulisan">Hobi: sepak bola</p>
+          <p class="tulisan">Media sosial: IG</p>
+          <p>
+            <center>-------------------------------------------</center>
+            <center><strong>PENGALAMAN DI KELAS PTI E</strong></center>
+            <p class="pengalaman">
+              Setelah lulus dari SMK, saya melanjutkan ke Satya Wacana mengambil jurusan FTI. Setiap tahun
+              ajaran baru pasti ada cerita yang menarik. ini adalah pengalaman saya di kelas PTI E. Tahun
+              ajaran baru 2020 ini sangat menarik dari tahun-tahun sebelumnya karena belajar mengajar di
+              lakukan secara online tidak secara langsung / tatap muka karena ada pandemi covid-19. Setiap
+              hari saya ada di depan laptop atau smartphone untuk mulai berinteraksi dengan dosen dan
+              teman-teman.
+            </p>
+            <p class="pengalaman">
+              Dengan menggunakan laptop pelajaran PTI E berlangsung dengan baik, tetapi masalah dengan
+              paket data kadang-kadang bisa terjadi di tengah pelajaran. Saya harus bisa beradaptasi
+              dengan keadaan ini. Supaya saya bisa mengikuti pelajaran dengan baik. Ini pengalaman singkat
+              saya di kelas PTI E.
+            </p>
+      </td>
+      <td>
+        <p class="kanan"><strong>Blog</strong></p>
+        <hr color="Black">
+        <img src="1.png" width="290" alt="blog" title="blog">
+        <hr color="Black">
+        <center>
+          <a href="https://uksw672020172.blogspot.com/" class="link">^-^Jangan lupa kunjungi blog saya^-^</a>
+        </center>
+        <p class="kanan"><strong>Sosmed</strong></p>
+        <hr color="Black">
+        <center>
+          <img src="2.jpg" width="139" alt="instagram" title="instagram">
+        </center>
+        <hr color="Black">
+        <center>
+          <a href="https://www.instagram.com/david34ivan/" class="link">IG (david34ivan)</a>
+        </center>
+        <p class="kanan"><strong>ADS</strong></p>
+        <hr color="Black">
+        <center>
+          <img src="ads123.jpg" width="139" alt="ads" title="ads">
+        </center>
+        <hr color="Black">
+        <center>
+          <a href="TAS.html" class="link">Papan iklan</a>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <br><br>
+  <form name="pesan" id="pesanForm">
+    <fieldset>
+      <br><br>
+      <legend>CONTACT US</legend>
+
+      <div id="alertSuccess" class="alert success" style="display: none;">
+        <span class="closebtn" onclick="hideAlert()">&times;</span>
+        <strong>Success!</strong> pesan terkirim.
+      </div>
+
+      <label for="nama">nama</label>
+      <input class="from" type="text" id="nama" name="nama" placeholder="nama lengkap">
+      <br><br>
+      <label for="email">email</label>
+      <input class="from" type="email" id="email" name="email" placeholder="email">
+      <br><br>
+      <label for="pesan">pesan</label>
+      <textarea name="pesan"></textarea>
+      <br><br>
+      <button class="button button2" type="submit" onclick="changeButton()">kirim</button>
+
+      <button id="buttonLoad" class="buttonload" style="display: none;">
+        <i class="fa fa-circle-o-notch fa-spin"></i>Loading
+      </button>
+
+      <script>
+        function changeButton() {
+          var button = document.getElementsByClassName('button button2')[0];
+          var buttonLoad = document.getElementById('buttonLoad');
+          var alertSuccess = document.getElementById('alertSuccess');
+          var form = document.getElementById('pesanForm');
+
+          button.style.display = 'none';
+          buttonLoad.style.display = 'inline-block';
+          alertSuccess.style.display = 'block';
+
+          setTimeout(function () {
+            button.style.display = 'inline-block';
+            buttonLoad.style.display = 'none';
+            alertSuccess.style.display = 'none';
+          }, 3000);
+        }
+
+        function hideAlert() {
+          var alertSuccess = document.getElementById('alertSuccess');
+          alertSuccess.style.display = 'none';
+        }
+      </script>
+    </fieldset>
+  </form>
+
+  <p class=" tulisan"><strong>Created By: David</strong></p>
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbzmNXohtyX01AIzntQS1LRbUZvic5ECgSQ1g688QZxiaSsV3Hn5kM0WlxIm_GV3RvOm/exec'
+    const form = document.forms['pesan']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => {
+          form.reset();
+          console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
